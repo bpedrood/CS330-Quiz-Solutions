@@ -1,0 +1,31 @@
+%-----------------------Homework------------------------------------
+%-------------------Arman Shokrollahi---------------------------------
+%---------------------Coding Theory-------------------------------
+
+\documentclass[a4 paper]{article}
+% Set target color model to RGB
+\input{preamble.tex}
+
+\begin{document}
+\homework{Quiz \#4}{}{Feb. 25, 2019}{}{}{}
+\vspace{5mm}
+\problem{1 \textbf{(6pt)}} % \todo[color = green!50]{Esto es un ejemplo} 
+Given an array $A$ and a positive integer constant $k$, assert that the length-k prefix of $A$ (the subarray made up of the first k elements of $A$) is the same as the length-k suffix of $A$. \emph{\underline{For example,}} $\hat{A}=[1,2,3,4,5,1,2,3]$ and $\hat{k}=3$.\vspace{2mm}\\
+% 	\[
+% 		-4x^3 + 14x^2 - 4x - 6 \leq 0
+% 	\]
+\solution{}\\
+         \forall i \in I_k : A[i] = A[ |A|-k+i ]
+
+         Note that the textbook uses the convention that arrays begin from index 1, but this flies in the face of all CS intuition, so it would be reasonable if we use a zero-indexed array instead.\vspace{10mm}\\
+\problem{2 \textbf{(4pt)}}   Evaluate (T/F):
+\begin{itemize}
+    \item \textbf{a (2 pt)} $\neg \exists i \in I^+ : \exists j \in I : (i+1)\times j = i^2$
+    
+    \solution{} \textbf{True}. If an $i$ exists, then $j=i^2/(i+1)$, which is impossible for a positive integer $i$.  Thus, the negation of that is true. \emph{(You did not need to provide explanation)}\vspace{1mm}
+    
+    \item \textbf{b (2 pt)} $\forall i \in R : \exists j \in R : i = j^2$
+    
+    \solution{} \textbf{False}. If we pick $i$, then $j = \sqrt{i}$, which is not real if $i$ is negative.
+\end{itemize}
+\end{document}
